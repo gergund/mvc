@@ -9,6 +9,10 @@
 class AppController
 {
     public function actionIndex(){
-        echo('<p>actionIndex Controller <p>It works!');
+
+        echo('<p>actionIndex Controller');
+
+        require_once(ROOT.'/views/app/index.php');
+        return true;
     }
 }
